@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login screen</title>
+		<link rel="stylesheet" type="text/css" href="login.css">
+		<link rel="shortcut icon"  href="tecnologia-antigravidade_52683-6032.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	</head>
+	<body>
+		<div class="header">
+		<h2 class="logo">mysite500</h2>
+		<input type="checkbox" id="chk">
+		<label for="chk" class="show-menu-btn">
+			<i class="fas fa-bars"></i>
+		</label>
+
+		<ul class="menu">
+			<a href="index.html">Home</a>
+	
+			<label for="chk" class="hide-menu-btn">
+				<i class="fas fa-times"></i>
+			</label>
+		</ul>
+	</div>
+
+	<div class="contudo">
+		<center>	
+			<img src="1.jpg" style="width:0% height:80%">
+		</center>
+	
+	</div>
+		
+
+
+		<div class="loginbox">
+		<img src="perfil.png" class="avatar">
+			<h1>Login</h1>
+			<form id="formulario">
+				<p>Nome de Usuário</p>
+				<input type="text" name="" placeholder="Digite seu Username" id="user">
+				<p>Senha</p>
+				<input type="password" name="" placeholder="Digite sua senha" id="campo">
+				<input type="submit" onclick="mostravalor()" value="Entrar"/>
+				</form>
+				<a href="#">Perdeu a sua senha ?</a><br>
+				<a href="#">Você não tem uma conta ?</a>
+			</form>
+	<script>
+	var form = document.getElementById('formulario');
+var campo = document.getElementById('campo');
+var user = document.getElementById('user');
+form.addEventListener('submit', function(e) {
+    // alerta o valor do campo
+    alert(user.value);
+	alert(campo.value);
+	alert("Cadastro Concluído com Sucesso!")
+    // impede o envio do form
+    e.preventDefault();
+});
+</script>
+	</div>
+
+	<div class="copyright"> <center> ©2019 Open-Code Truck - Todos os direitos reservados </center></div>
+	
+	</body>
+</html>
